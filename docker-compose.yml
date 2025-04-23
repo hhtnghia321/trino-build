@@ -8,8 +8,7 @@ services:
     image: "trinodb/trino:472"
     container_name: trino_db
     networks:
-      network_test:
-        ipv4_address: 172.18.0.4
+      - network_test
     restart: unless-stopped
     volumes:
       - ./etc:/etc/trino
