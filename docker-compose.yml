@@ -3,7 +3,7 @@ services:
     env_file: "./trino.env"
     hostname: trino_test
     ports:
-      #- "9080:8080"
+      - "9080:8080"
       - "9043:8443"
     image: "trinodb/trino:472"
     container_name: trino_db
